@@ -5,7 +5,7 @@ def count_batteries_by_health(present_capacities):
     SoH=float(100*(battery)/120)
     if SoH>80:
       dict["healthy"]=dict["healthy"]+1
-    elif SoH<80 and SoH>62:
+    elif SoH<=80 and SoH>62:
       dict["exchange"]=dict["exchange"]+1
     else :
       dict["failed"]=dict["failed"]+1
